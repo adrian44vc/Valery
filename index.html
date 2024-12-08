@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Un sitio web sincero para pedir perdón a alguien especial." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.png" type="image/png" />
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Protest+Riot&family=Nunito:wght@400;600;700&display=swap" 
+    rel="stylesheet" 
+  />
+
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="style.css" />
+
+  <title>💔¿Me perdonas?💔</title>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="header">
+    <h1 class="header__title">Una Sincera Disculpa</h1>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container">
+    <!-- Sección principal de disculpa -->
+    <section class="apology-section">
+      <img class="cat-img" src="img/cat-0.jpg" alt="Un gatito triste pidiendo perdón" />
+      <h2 class="title">¿Me perdonas, por favor?</h2>
+      <p class="intro-text">
+        Sé que lo que hice no estuvo bien. He pensado mucho en ello, y aunque sea medio tonto...
+        Aquí estoy, con el corazón en la mano, pidiéndote disculpas de la forma más sincera 
+        que puedo.
+      </p>
+
+      <div class="buttons">
+        <button type="button" class="btn btn--yes">Sí</button>
+        <button type="button" class="btn btn--no">No</button>
+      </div>
+
+      <!-- Nuevo contenedor para las frases dinámicas que aparecerán al presionar "No" -->
+      <div class="message-area"></div>
+    </section>
+
+    <!-- Sección de disculpa extendida (aparecerá tras cierto número de "No") -->
+    <section class="extended-apology hidden">
+      <h3>De verdad lo siento</h3>
+      <p>
+        Entiendo que mis acciones te preocuparon de mas... y no fue mi intención. A veces, 
+        cometemos errores que no reflejan lo que sentimos realmente. O simplemente la cagamos
+        sin darnos cuenta, creyendo que no hay problema o que no deberia de haber problema por hacer
+        lo que hicimos, pero en este caso... Te preoucupe de mas y no esta bien eso...
+      </p>
+      <p>
+        Cada vez que presionas "No", siento la punzadita en el cocoro :C, 
+        recordándome la preocupación que te cause. No puedo prometer perfección, pero sí 
+        esfuerzo por mejorar, entender y cuidar de tus sentimientos como mi amiga, y espero que en un futuro
+        algo mas...
+      </p>
+      <p>
+        Si decides perdonarme, prometo tratar de hacer lo posible por evitar perder tu confianza 
+        y demostrarte con hechos, no sólo con palabras, que esto fue un tropiezo y un error tonto
+        y no el camino quisiera seguir.
+      </p>
+    </section>
+
+    <!-- Mensaje final que se muestra al presionar "Sí" -->
+    <section class="final-message hidden">
+      <h3>Gracias por perdonarme</h3>
+      <p>
+        No sabes cuánto significa esto para mí. Siento un gran alivio y un fuerte 
+        compromiso de demostrarte día a día que tu confianza no fue en vano.
+      </p>
+      <p>
+        Hecho con mucho amor por Maverih ♥
+      </p>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p>
+      &copy; 2024 - Esta página fue creada con el corazón, la vergüenza, 
+      y la determinación de hacer las cosas mejor.
+    </p>
+  </footer>
+
+  <!-- Script principal -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>

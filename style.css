@@ -1,0 +1,233 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ajustes base */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background: linear-gradient(135deg, #fde2f3, #fff1f8);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo del header */
+.header {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 2rem;
+}
+
+.header__title {
+  font-family: "Protest Riot", sans-serif;
+  font-size: 3rem;
+  color: #ff4fa8;
+  letter-spacing: 0.1rem;
+}
+
+/* Contenedor principal */
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Sección principal de disculpa */
+.apology-section {
+  width: 100%;
+  max-width: 60rem;
+  margin: 2rem auto;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 2rem;
+  padding: 3rem;
+  box-shadow: 0 0 2rem rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.apology-section:hover {
+  transform: scale(1.02);
+}
+
+/* Imagen del gato */
+.cat-img {
+  border-radius: 1.6rem;
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.cat-img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+/* Título principal */
+.title {
+  font-size: 3.2rem;
+  color: #ff4fa8;
+  margin-bottom: 1.5rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+/* Texto introductorio */
+.intro-text {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+/* Botones */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 1.2rem 2rem;
+  border: none;
+  border-radius: 0.8rem;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn--yes {
+  background-color: #40c057;
+}
+
+.btn--yes:hover {
+  background-color: #2fab4c;
+}
+
+.btn--no {
+  background-color: #f03e3e;
+}
+
+.btn--no:hover {
+  background-color: #d83232;
+}
+
+/* Área de mensajes dinámica */
+.message-area {
+  font-size: 1.8rem;
+  color: #555;
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  transition: opacity 0.5s ease;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.message-area.show {
+  opacity: 1;
+}
+.message-area.hide {
+  opacity: 0;
+}
+
+/* Sección de disculpa extendida */
+.extended-apology {
+  width: 100%;
+  max-width: 60rem;
+  margin: 2rem auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 2rem;
+  padding: 3rem;
+  box-shadow: 0 0 2rem rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.extended-apology h3 {
+  font-size: 2.4rem;
+  color: #ff4fa8;
+  margin-bottom: 1rem;
+}
+
+.extended-apology p {
+  font-size: 1.8rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Sección del mensaje final */
+.final-message {
+  width: 100%;
+  max-width: 60rem;
+  margin: 2rem auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 2rem;
+  padding: 3rem;
+  box-shadow: 0 0 2rem rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.final-message h3 {
+  font-size: 2.4rem;
+  color: #40c057;
+  margin-bottom: 1rem;
+}
+
+.final-message p {
+  font-size: 1.8rem;
+  color: #444;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Clase hidden y show para mostrar/ocultar secciones */
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block !important;
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 1.5rem;
+}
+
+.footer p {
+  font-size: 1.4rem;
+  color: #666;
+}
